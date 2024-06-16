@@ -15,15 +15,14 @@ The expected result is a tuple, which will indicate whether it mail was sent or 
 The basic operation consists of only sending the subject, the content of the mail and to which user it will be sent.<br>
 ```Tuple<bool, string> sended = await mail.SendMail("subject", "content", "mail@gmail.com")```
 
-It is possible to send it to several users.
-<br>
+It is possible to send it to several users.<br>
 ```Tuple<bool, string> sended = await mail.SendMail("subject", "content", "mail@gmail.com")```
 
-If you want to send the mail to several users, you must send a list of type chain containing all the mails.
+If you want to send the mail to several users, you must send a list of type chain containing all the mails.<br>
 ```Tuple<bool, string> sended = await mail.SendMail("subject", "content", null, recipientList)```
 
 It is possible to send documents in the mail, you must send a list of type "Attachment", which is offered by Microsoft. 
-The allowed file formats are Json, Pdf, Xls, Xlsx, Ppt, Pptx, Doc, Docx and the maximum size is 20 MB (per file).
+The allowed file formats are Json, Pdf, Xls, Xlsx, Ppt, Pptx, Doc, Docx and the maximum size is 20 MB (per file).<br>
 ```Tuple<bool, string> sended = await mail.SendMail("subject", "content", null, recipientList, [attachments])```
 
 
