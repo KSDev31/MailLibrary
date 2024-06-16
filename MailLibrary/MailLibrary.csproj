@@ -9,6 +9,7 @@
     <EnforceCodeStyleInBuild>True</EnforceCodeStyleInBuild>
     <GenerateDocumentationFile>False</GenerateDocumentationFile>
     <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
+    <RepositoryUrl>https://github.com/KSDev31/MailLibrary</RepositoryUrl>
   </PropertyGroup>
 
   <ItemGroup>
