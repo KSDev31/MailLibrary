@@ -1,8 +1,13 @@
 ﻿using MailLibrary;
+using System.Net.Mail;
 string customHtml = await File.ReadAllTextAsync("customHtml.html");
-EmailSender mail = new("musiccorreo225@gmail.com", "vxyj masg pwzj hxes", customHtml);
-List<string> emails = ["josepaz12.32@gmail.com", "josepaz12.32@hotmail.com"];
-Tuple<bool, string> sended = await mail.SendMail("Mail library", "<h1>TEXTOJP</h1>", null, emails);
+EmailSender mail = new("test@gmail.com", "vxyj masg pwzj hxes", customHtml);
+
+
+Attachment attachment = new("bootstrap.css");
+
+List<string> emails = ["test@gmail.com", "test@hotmail.com"];
+Tuple<bool, string> sended = await mail.SendMail("Mail library", "<h1>TEXTOJP</h1>", null, emails, [attachment]);
 
 if (!sended.Item1)
 {
