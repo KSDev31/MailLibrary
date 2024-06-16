@@ -12,7 +12,7 @@ The library supports sending e-mails to a single user or to several users, only 
 
 The expected result is a tuple, which will indicate whether it mail was sent or not (boolean), and based on that the second value of the tuple will be the error code or a list of the users to whom the mail was sent.
 
-The basic operation consists of only sending the subject, the content of the mail and to which user it will be sent.
+The basic operation consists of only sending the subject, the content of the mail and to which user it will be sent.<br>
 ```Tuple<bool, string> sended = await mail.SendMail("subject", "content", "mail@gmail.com")```
 
 It is possible to send it to several users.
