@@ -16,6 +16,7 @@ The basic operation consists of only sending the subject, the content of the mai
 ```Tuple<bool, string> sended = await mail.SendMail("subject", "content", "mail@gmail.com")```
 
 It is possible to send it to several users.
+<br>
 ```Tuple<bool, string> sended = await mail.SendMail("subject", "content", "mail@gmail.com")```
 
 If you want to send the mail to several users, you must send a list of type chain containing all the mails.
