@@ -25,7 +25,8 @@ It is possible to send documents in the mail, you must send a list of type "Atta
 The allowed file formats are Json, Pdf, Xls, Xlsx, Ppt, Pptx, Doc, Docx and the maximum size is 20 MB (per file).<br>
 ```Tuple<bool, string> sended = await mail.SendMail("subject", "content", null, recipientList, [attachments])```
 
-It is possible to send the mail with your own html, you only have to send the file when the library is instantiated. <br>
+It is possible to send the mail with your own html, you only have to send the file when the library is instantiated.<br>
+It should be noted that the css styles must be in the head of the html exclusively, because the sending of mails does not support external css.<br>
 ```EmailSender mail = new("mailFrom", "password", customHtml);```
 
 
